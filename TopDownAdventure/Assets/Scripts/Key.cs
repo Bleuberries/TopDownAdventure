@@ -17,9 +17,9 @@ public class Key : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag.Equals("Player"))
+        if (collision.gameObject.tag.Equals("Player"))
         {
-            Debug.Log("Ive been collected!");
+            Debug.Log("ive been collected!");
             Destroy(this.game.Object); //destory the key
         }
     }

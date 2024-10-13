@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -76,7 +77,7 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.tag.Equals("door2") && hasKey == true) 
         {
             Debug.Log("unlocked door!");
-            //take the new scene 
+            SceneManager.LoadScene(0); //take the new scene 
         }
     }    
 }
