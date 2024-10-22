@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         soundEffects = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
-        if (instance != null) //if another instance of the player is in the scene
+        if(instance != null) //if another instance of the player is in the scene
         {
             Destroy(gameObject); //then destory it 
         }
