@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; //importing SceneManagement.Library , always 
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5;
     private SpriteRenderer sr;
     public bool hasKey = false;
 
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
    public AudioClip doorEnter;
    
 
-    //public Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public static PlayerController instance;
     // Start is called before the first frame update

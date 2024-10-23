@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408136046}
   - component: {fileID: 408136045}
+  - component: {fileID: 408136047}
   m_Layer: 0
   m_Name: brownChest
   m_TagString: Untagged
@@ -200,12 +201,25 @@ Transform:
   m_GameObject: {fileID: 408136044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.93, y: -1.38, z: 0}
+  m_LocalPosition: {x: 0.93, y: -1.24, z: 0}
   m_LocalScale: {x: 0.7673, y: 0.7852, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408136047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408136044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844f5d9d54d6d4312b8699c5245b00c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chestSound: {fileID: 0}
 --- !u!1 &1632272613
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,8 +390,8 @@ Transform:
   m_GameObject: {fileID: 2085177717}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0092, y: -0.11, z: 0}
-  m_LocalScale: {x: 2.2696664, y: 1.6737248, z: 1}
+  m_LocalPosition: {x: 0.0366, y: -0.0004, z: 0}
+  m_LocalScale: {x: 1.8232603, y: 1.6386235, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
