@@ -50,28 +50,28 @@ public class PlayerController : MonoBehaviour
         {
             newPosition.y += speed;
             //change sprite to up sprite
-            sr.sprite = upSprite;
+            //sr.sprite = upSprite;
         }
 
         //go left 
         if(Input.GetKey("a")) 
         {
             newPosition.x -= speed;
-            sr.sprite = leftSprite;
+            //sr.sprite = leftSprite;
         }
 
         //go down
         if(Input.GetKey("s")) 
         {
             newPosition.y -= speed;
-            sr.sprite = frontSprite;
+           // sr.sprite = frontSprite;
         }
 
         //go right
         if(Input.GetKey("d")) 
         { 
             newPosition.x += speed;
-            sr.sprite = rightSprite;
+            //sr.sprite = rightSprite;
         }
         transform.position = newPosition;
     } 
