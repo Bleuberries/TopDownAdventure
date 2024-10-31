@@ -16,24 +16,8 @@ public class Key : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hitInfo.collider!=null && hitInfo.collider.gameObject.layer ==layerIndex)
-        {
-
         
-        if (keyboard.current.spaceKey.wasPressedThisFrame && Key == null)
-        {
-            Key = hitInfo.collider.gameObject;
-            Key.GetComponent<Rigidbody2D>().isKinematic = true;
-            Key.transform.position = grabPoint.position;
-            Key.transform.SetParent(transform);
-        }
-        else if (keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            Key.GetComponent<RigidBody2D>().isKinematic = false;
-            Key.transform. SetParent(null);
-            Key = null;
-        }
-        }
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,5 +27,6 @@ public class Key : MonoBehaviour
             //keySound.Play();
            //Destroy(this.game.Object); //destory the key
         }
-    }
+    } 
+    
 }
